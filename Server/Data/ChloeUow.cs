@@ -29,7 +29,25 @@ namespace Chloe.Server.Data
         
         public IRepository<User> Users { get { return GetStandardRepo<User>(); } }
         public IRepository<Role> Roles { get { return GetStandardRepo<Role>(); } }
-        
+        public IRepository<Alert> Alerts { get { return GetStandardRepo<Alert>(); } }
+        public IRepository<Contact> Contacts { get { return GetStandardRepo<Contact>(); } }
+        public IRepository<Employee> Employees { get { return GetStandardRepo<Employee>(); } }
+        public IRepository<Equipment> Equipment { get { return GetStandardRepo<Equipment>(); } }
+        public IRepository<EquipmentType> EquipmentTypes { get { return GetStandardRepo<EquipmentType>(); } }
+        public IRepository<Event> Events { get { return GetStandardRepo<Event>(); } }
+        public IRepository<Inventory> Inventory { get { return GetStandardRepo<Inventory>(); } }
+        public IRepository<Location> Locations { get { return GetStandardRepo<Location>(); } }
+        public IRepository<Organization> Organizations { get { return GetStandardRepo<Organization>(); } }
+        public IRepository<Profile> Profiles { get { return GetStandardRepo<Profile>(); } }
+        public IRepository<Project> Projects { get { return GetStandardRepo<Project>(); } }
+        public IRepository<Report> Reports { get { return GetStandardRepo<Report>(); } }
+        public IRepository<Resource> Resources { get { return GetStandardRepo<Resource>(); } }
+        public IRepository<Schedule> Schedules { get { return GetStandardRepo<Schedule>(); } }
+        public IRepository<Skill> Skills { get { return GetStandardRepo<Skill>(); } }
+        public IRepository<Task> Tasks { get { return GetStandardRepo<Task>(); } }
+        public IRepository<Vendor> Vendors { get { return GetStandardRepo<Vendor>(); } }
+        public IRepository<VenueType> VenueTypes { get { return GetStandardRepo<VenueType>(); } }
+        public IRepository<Venue> Venues { get { return GetStandardRepo<Venue>(); } }
 
         protected void ConfigureDbContext(IDbContext dbContext)
         {

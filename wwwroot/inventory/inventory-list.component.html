@@ -1,0 +1,15 @@
+<div class="inventoryList">
+    <div class="inventoryList-header">
+        <h1>Inventorys</h1>
+    </div>
+    
+    <div data-ng-repeat="entity in vm.entities" class="inventoryList-item">
+        <div class="inventoryList-name">
+            {{ entity.name }}
+        </div>
+        <div class="inventoryList-actions">
+            <span data-ng-click="vm.edit({ entity: this.entity })">edit</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span data-ng-click="vm.remove({ entity: this.entity })">remove</span>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</div>
